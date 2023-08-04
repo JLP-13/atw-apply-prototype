@@ -5,7 +5,10 @@ How do your disabilities or health conditions affect you at work? – Access to 
 {% endblock %}
 
 {% block beforeContent %}
-  <a class="govuk-back-link" href="/alpha-apply-1g/1g-your-health-condition-or-disability-hrmc-table-3">Back</a>
+{{ govukBackLink({
+text: "Back",
+href: "javascript:history.go(-1)"
+}) }}
 {% endblock %}
 
 {% block content %}

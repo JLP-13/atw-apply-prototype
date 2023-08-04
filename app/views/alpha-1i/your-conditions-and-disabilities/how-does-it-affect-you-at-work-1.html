@@ -5,7 +5,10 @@ How does your disability or health condition affect you at work? – Access to W
 {% endblock %}
 
 {% block beforeContent %}
-  <a class="govuk-back-link" href="/alpha-1i/your-conditions-and-disabilities/1">Back</a>
+{{ govukBackLink({
+text: "Back",
+href: "javascript:history.go(-1)"
+}) }}
 {% endblock %}
 
 {% block content %}
